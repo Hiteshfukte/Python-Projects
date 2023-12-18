@@ -1,12 +1,13 @@
 # Python-Projects
 This Is My Frist Year Projects That I have Made While Practicing
-#1.Emplayers Id
-class Employee:
-    __id=0
-    __name=""
-    __gender=""
-    __city=""
-    __salary=0
+#1.Employer's Id
+
+    class Employee:
+        __id=0
+        __name=""
+        __gender=""
+        __city=""
+        __salary=0
 
   
   
