@@ -1,6 +1,6 @@
 # Python-Projects
-This Is My Frist Year Projects That I have Made While Practicing
-#1.Employer's Id
+#This Is My Frist Year Projects That I have Made While Practicing
+#1Employer's Id
 
     class Employee:
         __id=0
