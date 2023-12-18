@@ -25,12 +25,12 @@ class Employee:
         print("City\t:", self.__city)
         print("Salary\t:", self.__salary)
 
-def main():
+    def main():
     
     emp=Employee()
     emp.setData(1,'Vaibhav','male','Surat',5500)
     emp.showData()
 
-if __name__=="__main__":
+    if __name__=="__main__":
     main()
     
