@@ -8,13 +8,13 @@ mpDraw = mp.solutions.drawing_utils
 cap = cv2.VideoCapture(0)
 canvas = np.zeros((480, 640, 3), np.uint8)
 last_point = None
-gesture = ' '  # Initialize gesture with a default value
-num_fingers = 0  # Initialize num_fingers with a default value
+gesture = ' '  
+num_fingers = 0  
 
 while True:
     ret, frame = cap.read()
     
-    # Check if frame is not None and has valid dimensions
+    
     if ret and frame is not None and frame.shape[0] > 0 and frame.shape[1] > 0:
         x, y, c = frame.shape
         frame = cv2.flip(frame, 1)
