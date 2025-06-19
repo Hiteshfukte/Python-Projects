@@ -1,37 +1,59 @@
-# Python-Projects
-#This Is My Frist Year Projects That I have Made While Practicing
-#1Employer's Id
+This repository contains two Python projects: a computer vision-based hand gesture drawing app, and a simple employee information handler using object-oriented programming.
+# Python Projects
 
-    class Employee:
-        __id=0
-        __name=""
-        __gender=""
-        __city=""
-        __salary=0
+This repository contains two Python projects: a computer vision-based hand gesture drawing app, and a simple employee information handler using object-oriented programming.
 
-  
-  
-    def setData(self,id,name,gender,city,salary):
-        self.__id=id
-        self.__name = name
-        self.__gender = gender
-        self.__city = city
-        self.__salary = salary
+## 📌 Projects
 
+### 1. ✋ Draw with Finger (Hand Gesture Drawing App)
 
-    def showData(self):
-        print("Id\t\t:",self.__id)
-        print("Name\t:", self.__name)
-        print("Gender\t:", self.__gender)
-        print("City\t:", self.__city)
-        print("Salary\t:", self.__salary)
+This project uses a webcam to detect hand gestures and lets you draw on a virtual canvas using different gestures.
 
-    def main():
-    
-    emp=Employee()
-    emp.setData(1,'Vaibhav','male','Surat',5500)
-    emp.showData()
+**Features:**
+- Uses MediaPipe to detect hands and landmarks
+- Draw lines, rectangles, circles, or erase based on the number of fingers shown
+- Real-time video feed with gesture detection overlay
 
-    if __name__=="__main__":
-    main()
-    
+**Finger Mapping:**
+- 1 Finger: Draw Line  
+- 2 Fingers: Draw Rectangle  
+- 3 Fingers: Draw Circle  
+- 4 or 5 Fingers: Eraser  
+
+**Dependencies:**
+```bash
+pip install opencv-python mediapipe numpy
+Run the project:
+
+bash
+Copy
+Edit
+python "draw with fingure.py"
+```
+
+# 1.👨‍💼 Employer ID Handler
+
+A basic Python script using classes to manage and display employee data.##  Functionality
+Stores ID, name, gender, city, and salary
+
+Displays all stored information
+
+## Code Structure
+
+Employee class with private attributes
+
+setData() method to initialize data
+
+showData() method to display the data
+
+## Run the project
+
+bash
+Copy
+Edit
+python Employer_Id.py
+## ✅ Requirements
+Python 3.8+
+
+Webcam (for the hand gesture app)
+
